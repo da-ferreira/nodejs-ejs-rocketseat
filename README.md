@@ -1,3 +1,3 @@
 # nodejs-express-ejs-rocketseat
 
-NodeJs + Express + EJS da Rocketseat - Trilha Fundamentar
+NodeJs + Express + EJS - Rocketseat - Trilha Fundamentar
