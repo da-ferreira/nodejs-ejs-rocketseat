@@ -14,5 +14,5 @@ app.get('/sobre', function (req, res) {
 
 // Iniciando o servidor (listen fica ouvindo uma porta)
 app.listen(8080, () => {
-	console.log('Sistema iniciado com sucesso na porta 8080');
+	console.log('Rodando na porta 8080');
 });
