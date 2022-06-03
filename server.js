@@ -5,11 +5,22 @@ app.set('view engine', 'ejs');
 
 // A resposta ao acessar a rota '/' será renderizar o index na pasta views
 app.get('/', function (req, res) {
-	res.render('index');
+	const items = [
+		{ title: 'D', message: 'Lorem' },
+		{ title: 'E', message: 'Lorem' },
+		{ title: 'M', message: 'Lorem' },
+		{ title: 'A', message: 'Lorem' },
+		{ title: 'I', message: 'Lorem' },
+		{ title: 'S', message: 'Lorem' },
+	];
+
+	const subtitle = 'Uma linguagem de modelagem para criação de páginas HTML utilizando JS';
+
+	res.render('pages/index', { qualitys: items, subtitle: subtitle }); // Passando um objeto
 });
 
-app.get('/sobre', function (req, res) {
-	res.render('about');
+app.get('/about', function (req, res) {
+	res.render('pages/about');
 });
 
 // Iniciando o servidor (listen fica ouvindo uma porta)
